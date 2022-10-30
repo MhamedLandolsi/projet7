@@ -1,0 +1,16 @@
+@import '../vars';
+
+._nav{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .nav-item{
+        text-decoration: unset;
+        color: #FF6060;
+    }
+    .active{
+        text-decoration: underline;    
+    }
+}

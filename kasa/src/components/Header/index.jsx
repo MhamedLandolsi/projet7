@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom'
+import '../../Styles/components/header.scss'
+
+import Logo from '../Logo'
+import Nav from '../Nav'
 
 function Header() {
   return (
-    <nav>
-      <Link to="/">Accueil</Link>
-      <Link to="/a-propos">A propos</Link>
-    </nav>
+    <header>
+      <Logo/>
+      <Nav/>
+    </header>
   )
 }
 
