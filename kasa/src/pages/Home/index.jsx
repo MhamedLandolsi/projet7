@@ -10,7 +10,7 @@ function Home() {
       <SectionImg img={img} text="Chez vous, partout et ailleurs"></SectionImg>
       <div className="liste">
         {data.map((item) => (
-          <Thumb text={item.title} img={item.cover}  ids={item.id} />
+          <Thumb text={item.title} img={item.cover}  ids={item.id} key={item.id} />
         ))}
       </div>
     </div>

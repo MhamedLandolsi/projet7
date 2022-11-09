@@ -1,0 +1,38 @@
+.page404{
+    display: flex;
+    color: #FF6060;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+    .item1{
+        font-size: 288px;
+        @media screen and (max-width: 768px) {
+            font-size: 96px;
+        }
+        
+    }
+
+    .item2{
+        font-size: 36px;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+            width: 180px;
+        }
+        
+    }
+
+    .item3{
+        margin-top: 180px;
+        text-decoration: unset;
+        color: #FF6060;
+        font-size: 18px;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            margin-top: 130px;
+            
+        }
+        
+    }
+
+}

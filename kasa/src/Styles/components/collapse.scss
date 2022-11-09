@@ -1,0 +1,23 @@
+.collapse {
+    margin-bottom: 24px;
+    .collapse-head {
+        display: flex;
+        font-weight: 500;
+        font-size: 24px;
+        color: white;
+        background: #FF6060;
+        padding: 5px 12px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .collapse-content {
+        background: #F6F6F6;
+        padding: 12px;
+
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 142.6%;
+        color: #FF6060;
+    }
+}

@@ -1,4 +1,9 @@
 .home{
+    .sectionImg{
+        @media screen and (max-width: 768px) {
+            width: auto;
+        }
+    }
     .liste{
         margin-top: 20px;
         background-color: #F6F6F6;
@@ -13,6 +18,18 @@
         .thumb{
             position: relative;
             width: 30%;
+            @media screen and (min-width:769px ) and (max-width:991px){
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            .thumb{
+                position: relative;
+                width: auto;
+                margin: 16px;
+            }
         }
     }
 }

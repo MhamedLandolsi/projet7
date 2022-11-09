@@ -1,0 +1,22 @@
+.apropos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+        width: 100%;
+    }
+
+    .content {
+        position: relative;
+        margin: 12px 5%;
+        @media screen and (max-width: 991px) {
+            margin: 12px 0;
+        }
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin-bottom: 24px;
+    }
+}

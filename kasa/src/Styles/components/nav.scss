@@ -1,8 +1,12 @@
 @import '../vars';
 
 ._nav{
+    font-size: 24px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
     display: flex;
-    width: 20%;
     align-items: center;
     justify-content: space-evenly;
 
@@ -12,5 +16,9 @@
     }
     .active{
         text-decoration: underline;    
+    }
+
+    .nav-item-first{
+        margin-right: 12px ;
     }
 }
