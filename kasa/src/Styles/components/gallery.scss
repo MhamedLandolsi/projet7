@@ -13,7 +13,6 @@
     .gallery-right {
             width: 100px;
             height: 100px;
-            transition: .5s;
             float: left;
             box-shadow: -3px 3px 0 white;
         }
@@ -42,11 +41,9 @@
         top: 460px;
         font-size: 50px;
         color: white;
-        right: calc(66vw - 200px);
 
         @media screen and (max-width: 768px) {
             top: 225px;
-            right: calc(46vw - 20px);
         }
     }
 

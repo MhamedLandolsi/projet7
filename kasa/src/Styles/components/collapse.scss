@@ -1,12 +1,14 @@
 .collapse {
     margin-bottom: 24px;
+    width: 100%;
+
     .collapse-head {
         display: flex;
         font-weight: 500;
         font-size: 24px;
         color: white;
         background: #FF6060;
-        padding: 5px 12px;
+        padding: 10px 12px;
         justify-content: space-between;
         cursor: pointer;
     }
@@ -20,4 +22,23 @@
         line-height: 142.6%;
         color: #FF6060;
     }
+
+    .collapse-up,
+    .collapse-down {
+        width: 25px;
+        height: 25px;
+        transition: .5s;
+        float: left;
+        box-shadow: -3px 3px 0 white;
+
+    }
+
+    .collapse-up {
+        transform: rotate(135deg) translate3d(18px, -1px, 0px);
+    }
+
+    .collapse-down {
+        transform: rotate(-45deg) translate3d(0px, -15px, 0px);
+    }
+
 }

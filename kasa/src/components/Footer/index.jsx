@@ -10,7 +10,7 @@ function Footer(){
         
         error || (<footer>
             <img src={icon} alt='footer img'></img>
-            <h2>© 2020 Kasa. All rights reserved</h2>
+            <div>© 2020 Kasa. All rights reserved</div>
 
         </footer>)
       )

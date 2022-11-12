@@ -5,10 +5,12 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    margin: 0;
 }
 main {
     margin-left: $globalMargin;
     margin-right: $globalMargin;
+    min-height: calc(100vh - 130px);
 
     @media screen and (max-width: 767px) {
         margin-left: $globalMarginMobile;

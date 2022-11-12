@@ -10,7 +10,7 @@ function Collapse({ title, children, open }) {
         <div className="collapse">
             <div className="collapse-head" onClick={() => setOpen(!isOpen)}>
                 <div className="collapse-title">{title}</div>
-                <div className="collapse-icone"> {isOpen ? '˅' : '˄'}</div>
+                <div className={'collapse-icon ' + (isOpen ? 'collapse-up' : 'collapse-down')}> </div>
             </div>
             {isOpen && <div className="collapse-content" >{children}</div>}
         </div>
