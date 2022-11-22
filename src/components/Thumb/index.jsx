@@ -6,7 +6,6 @@ function Thumb({ img, text, ids }) {
     return (
         <NavLink className='thumb' to={`/fiche-logement/${ids}`} style={{ backgroundImage: `url('${img}')` }} end={true}>
                 <div className='label'>{text}</div>
-
         </NavLink>
     )
 }

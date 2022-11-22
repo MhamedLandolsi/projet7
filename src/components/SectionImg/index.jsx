@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import '../../Styles/components/sectionimg.scss'
 
-function SectionImg({ img, text }) {
-    const Wrapper = styled.div`
+const Wrapper = styled.div`
     display: flex;
     height: 223px;
     flex-direction: column;
@@ -12,7 +12,7 @@ function SectionImg({ img, text }) {
     background-image: linear-gradient(
         #d3cdcd9c, 
         #d3cdcd9c
-    ),url('${img}');
+    ),url('${props => props.img}');
     background-repeat: no-repeat;
     border-radius: 30px;
     color:white;
@@ -24,21 +24,10 @@ function SectionImg({ img, text }) {
     }
         `
 
-    const Text = styled.p`
-    font-size:48px;
-    font-weight: 500;
-    padding-top: 4%;
-
-    @media screen and (max-width: 767px) {
-        font-size:24px;
-        width: 218px;
-        padding-top: 2%;
-
-    }
-    `    
+function SectionImg({ img, text }) {
     return (
-        <Wrapper className='section-img'>
-            <Text>{text}</Text>
+        <Wrapper img={img} className='section-img'>
+            <p className='section-img_text'>{text}</p>
         </Wrapper>
     )
 }

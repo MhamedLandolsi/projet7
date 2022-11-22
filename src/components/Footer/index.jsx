@@ -8,7 +8,7 @@ function Footer(){
 
     return (
         
-        error || (<footer>
+        !error && (<footer>
             <img src={icon} alt='footer img'></img>
             <div>© 2020 Kasa. All rights reserved</div>
 

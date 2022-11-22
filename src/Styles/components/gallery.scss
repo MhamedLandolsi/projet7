@@ -9,16 +9,15 @@
     justify-content: space-around;
     align-content: space-around;
 
-    .gallery-left,
-    .gallery-right {
+    &-left,
+    &-right {
             width: 100px;
             height: 100px;
             float: left;
             box-shadow: -3px 3px 0 white;
         }
   
-
-    .gallery-left {
+    &-left {
         position: absolute;
         left: calc(14vw);     
         cursor: pointer;
@@ -26,7 +25,7 @@
 
     }
 
-    .gallery-right {
+    &-right {
         position: absolute;
         right: calc(14vw);
         color: white;
@@ -36,7 +35,7 @@
 
     }
 
-    .gallery-count {
+    &-count {
         position: absolute;
         top: 460px;
         font-size: 50px;
@@ -47,7 +46,7 @@
         }
     }
 
-    .gallery-img {
+    &-img {
         border-radius: 25px;
         object-fit: cover;
         width: 100%;

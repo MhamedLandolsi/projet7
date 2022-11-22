@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './Styles/style.scss'
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-import Accueil from './pages/Home'
-import Apropos from './pages/Apropos';
-import Fiche from './pages/Fiche';
-import Page404 from './pages/Page404';
-import {  GlobalProvider } from './utils/GlobalScope';
+import Accueil from './pages/Accueil'
+import Apropos from './pages/Apropos'
+import Fiche from './pages/Fiche'
+import Page404 from './pages/Page404'
+import { GlobalProvider } from './utils/GlobalScope'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,4 +31,4 @@ root.render(
       <Footer />
     </GlobalProvider>
   </React.StrictMode>
-);
+)
